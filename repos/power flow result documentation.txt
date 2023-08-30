@@ -1,0 +1,19 @@
+To obtain the results of the Power Flow, one needs to use either:
+power_flow_normal_result["all_results"] for normal operation and
+power_flow_contin_result["all_results"] for post contingency operation
+
+1- the magnitude of voltages for bus i
+2- the angle of voltages for bus i
+3- the summation of injected active power flow of lines connected to node i
+4- the summation of injected reactive power flow of lines connected to node i
+5- the summation of injected active power of components (gen, load, FL, ess,...) connected to node i
+6- the summation of injected reactive power of components (gen, load, FL, ess,...) connected to node i
+
+power_flow_contin_result["all_results"][[c,s,t]][:p_cal] and the symbols are self-explanatory as:
+
+:q_cal
+:q_sch
+:p_sch
+:v_mag
+:p_cal
+:v_ang
