@@ -1,3 +1,17 @@
+################################################################################
+# This following code corresponds to the stochastic multi-period security-constrained optimal power flow 
+# for day-ahead ancillary services procurement to manage transmission system security. 
+# This code was developed by Mohammad Iman Alizadeh under the supervision of Dr. Florin Capitanescu 
+# Please cite the following work if you use this algorithm in your work. Thanks!
+
+# M. I. Alizadeh and F. Capitanescu, "A Tractable Linearization-Based Approximated Solution Methodology 
+# to Stochastic Multi-Period AC Security-Constrained Optimal Power Flow," in IEEE Transactions on Power Systems, 
+# vol. 38, no. 6, pp. 5896-5908, Nov. 2023. 
+
+# The paper can be found at https://doi.org/10.1109/TPWRS.2022.3220283  
+
+################################################################################
+
 using JuMP,OdsIO,MathOptInterface,Dates,LinearAlgebra, JLD2
 # using Ipopt
 # using BenchmarkTools
